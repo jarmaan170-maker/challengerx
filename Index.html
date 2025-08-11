@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChallengerX - Skill Based Gaming</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #0a0a0a, #1a1a1a);
+            color: white;
+        }
+        header {
+            background: #111;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 2px solid #ff6600;
+        }
+        header h1 {
+            margin: 0;
+            color: #ff6600;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background: #222;
+            padding: 10px;
+            gap: 20px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        nav a:hover {
+            color: #ff6600;
+        }
+        .hero {
+            text-align: center;
+            padding: 60px 20px;
+            background: url('https://images.unsplash.com/photo-1606112219348-204d7d8b94ee') no-repeat center/cover;
+        }
+        .hero h2 {
+            font-size: 2.5rem;
+            color: #ff6600;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin: auto;
+        }
+        .games {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px;
+        }
+        .game-card {
+            background: #1a1a1a;
+            border: 2px solid #333;
+            border-radius: 10px;
+            text-align: center;
+            padding: 20px;
+            transition: transform 0.3s;
+        }
+        .game-card:hover {
+            transform: translateY(-5px);
+            border-color: #ff6600;
+        }
+        .game-card img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+        .game-card h3 {
+            color: #ff6600;
+            margin: 15px 0 10px;
+        }
+        footer {
+            background: #111;
+            text-align: center;
+            padding: 15px;
+            font-size: 0.9rem;
+            color: #888;
+            border-top: 2px solid #ff6600;
+        }
+        .coming-soon {
+            color: #ff6600;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>ChallengerX</h1>
+        <p>Skill Based Gaming Platform</p>
+    </header>
+
+    <nav>
+        <a href="#">Home</a>
+        <a href="#games">Games</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero">
+        <h2>Play. Compete. Win.</h2>
+        <p>Join ChallengerX and test your skills in exciting games. Earn rewards, challenge friends, and climb the leaderboard.</p>
+    </section>
+
+    <section id="games" class="games">
+        <div class="game-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/3075/3075977.png" alt="Puzzle Game">
+            <h3>Puzzle Master</h3>
+            <p class="coming-soon">Coming Soon</p>
+        </div>
+        <div class="game-card">
+            <img src="https://cdn-icons-png.flaticon.com/512/743/743131.png" alt="Memory Challenge">
+            <h3>Memory Challenge</h3>
+            <p class="coming-soon">Coming Soon</p>
+        </div>
+    </section>
+
+    <section id="about" style="padding: 40px; text-align: center;">
+        <h2>About ChallengerX</h2>
+        <p>ChallengerX is an online platform for skill-based games where you can compete with players worldwide. Our mission is to create a fair and exciting gaming environment.</p>
+    </section>
+
+    <section id="contact" style="padding: 40px; text-align: center;">
+        <h2>Contact Us</h2>
+        <p>Email: support@challengerx.com</p>
+    </section>
+
+    <footer>
+        &copy; 2025 ChallengerX. All rights reserved.
+    </footer>
+
+</body>
+</html>
